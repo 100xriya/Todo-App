@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-black ">
+    <h1 class="text-yellow-100 text-5xl font-bold font-serif text-center pt-10">To-do List</h1>
+    <div
+        class="container bg-slate-700 flex flex-row justify-center h-[50vh] w-[60vw] rounded-md drop-shadow-lg absolute bottom-50 left-80">
+
+        <input type="text" placeholder="task name" id="task" class="max-h-10">
+        <ul id="list" class="text-yellow-100 text-lg font-serif m-5 text-center ">
+
+        </ul>
+        <div class="btnContainer content-end justify-evenly  ">
+            <button id="addbtn"
+                class="text-slate-800 bg-slate-100 border-slate-500 border-4 rounded-md px-2 py-1 h-10 w-35 m-5 ">Add
+                Task</button>
+            <!-- <button id="removebtn"
+                class="text-slate-800 bg-slate-100 border-slate-500 border-4 rounded-md px-2 py-1  h-10 w-35 m-5">Delete
+                task</button> -->
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
