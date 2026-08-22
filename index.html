@@ -4,27 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>To-Do List V2</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="bg-black ">
-    <h1 class="text-yellow-100 text-5xl font-bold font-serif text-center pt-10">To-do List</h1>
+<body class="bg-[#121212] font-sans h-[100vh] flex justify-center items-center flex-col">
     <div
-        class="container bg-slate-700 flex flex-row justify-center h-[50vh] w-[60vw] rounded-md drop-shadow-lg absolute bottom-50 left-80">
+        class="container bg-[#33323233] flex flex-col justify-center items-center p-5 w-fit h-fit rounded-md drop-shadow-lg ">
 
-        <input type="text" placeholder="Add a new task..." id="task" class="max-h-10">
-        <div class="btnContainer content-end justify-evenly  ">
+        <h1 class="h-fit mb-6 text-white text-2xl font-bold">To-do List</h1>
+        <div
+            class="container bg-[#33323233] flex justify-center items-center p-5 w-fit h-fit rounded-md drop-shadow-lg ">
+
+            <input type="text" placeholder="Add a new task..." id="task" class="p-2 rounded-sm bg-[#333333]">
             <button id="addbtn"
-                class="text-slate-800 bg-slate-100 border-slate-500 border-4 rounded-md px-2 py-1 h-10 w-35 m-5 ">Add
+                class="text-white bg-[#6200ea] hover:bg-[#3700b3] rounded-md px-2 py-1 h-10 w-35 m-5 ">Add
                 Task</button>
-            <!-- <button id="removebtn"
-                class="text-slate-800 bg-slate-100 border-slate-500 border-4 rounded-md px-2 py-1  h-10 w-35 m-5">Delete
-                task</button> -->
-
         </div>
-        <ul id="list" class="text-yellow-100 text-lg font-serif m-5 text-center "></ul>
-
+        <ul id="list" class="text-white text-sm m-5 text-center "></ul>
     </div>
 
 
